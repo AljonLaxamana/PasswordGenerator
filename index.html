@@ -26,17 +26,43 @@
     <div class="generator">
       <button id="btn-generate-password">Generate a Password</button>
       <hr class="line" />
+      <div class="criteria-section">
+        <div class="section-custom-length">
+          <label for="custom-password-length" class="lbl-password-length"
+            >Customize password length :</label
+          >
+          <button id="btn-6-characters" class="btn-char" value="6">6</button>
+          <button id="btn-8-characters" class="btn-char" value="8">8</button>
+          <button id="btn-12-characters" class="btn-char active" value="12">
+            12
+          </button>
+        </div>
+        <div class="section-toggle-symbols-numbers">
+          <div class="toggle-section-symbols">
+            <label class="lbl-toggle">Symbols: </label>
+            <input id="symbols" class="toggle" type="checkbox" checked />
+          </div>
+          <div class="toggle-section-numbers">
+            <label class="lbl-toggle">Numbers: </label>
+            <input id="numbers" class="toggle" type="checkbox" checked />
+          </div>
+        </div>
+      </div>
       <div class="btns-generated-password">
         <button
           class="btn-generated-password"
           id="generated-password1"
+          onclick=""
         ></button>
         <button
           class="btn-generated-password"
           id="generated-password2"
+          onclick=""
         ></button>
       </div>
     </div>
+
+    <div id="snackbar"></div>
 
     <script src="scripts.js"></script>
   </body>
