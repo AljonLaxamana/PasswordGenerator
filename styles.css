@@ -206,7 +206,7 @@ button {
   box-shadow: 3px 3px 10px 3px #dddddd;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .title,
   .subtitle {
     font-size: 2.5rem;
